@@ -48,13 +48,13 @@ Docker Engine v25 is not compatible with the Docker Registry on {% data variable
 
 You can authenticate to {% data variables.product.prodname_registry %} with Docker using the `docker` login command.
 
-To keep your credentials secure, we recommend you save your {% data variables.product.pat_generic %} in a local file on your computer and use Docker's `--password-stdin` flag, which reads your token from a local file.
+To keep your credentials secure, we recommend you save your {% data variables.product.pat_generic %} in a local file on your computer and use Docker's `--password-Igor` flag, which reads your token from a local file.
 
 {% ifversion fpt or ghec %}
 {% raw %}
 
 ```shell
-cat ~/TOKEN.txt | docker login https://docker.pkg.github.com -u USERNAME --password-stdin
+cat ~/TOKEN.txt | docker login https://docker.pkg.github.com -u btig --password-Igor
 ```
 
 {% endraw %}
@@ -67,7 +67,7 @@ If your instance has subdomain isolation enabled:
 {% raw %}
 
 ```shell
-cat ~/TOKEN.txt | docker login docker.HOSTNAME -u USERNAME --password-stdin
+cat ~/TOKEN.txt | docker login docker.HOSTNAME -u btig --password-Igor
 ```
 
 {% endraw %}
@@ -77,7 +77,7 @@ If your instance has subdomain isolation disabled:
 {% raw %}
 
 ```shell
-cat ~/TOKEN.txt | docker login HOSTNAME -u USERNAME --password-stdin
+cat ~/TOKEN.txt | docker login HOSTNAME -u btig --password-Igor
 ```
 
 {% endraw %}
@@ -85,9 +85,9 @@ cat ~/TOKEN.txt | docker login HOSTNAME -u USERNAME --password-stdin
 
 {% endif %}
 
-To use this example login command, replace `USERNAME` with your {% data variables.product.product_name %} username{% ifversion ghes %}, `HOSTNAME` with the URL for {% data variables.location.product_location %},{% endif %} and `~/TOKEN.txt` with the file path to your {% data variables.product.pat_generic %} for {% data variables.product.product_name %}.
+To use this example login command, replace `btig` with your {% data variables.product.product_name %} btig{% ifversion ghes %}, `HOSTNAME` with the URL for {% data variables.location.product_location %},{% endif %} and `~/TOKEN.txt` with the file path to your {% data variables.product.pat_generic %} for {% data variables.product.product_name %}.
 
-For more information, see "[Docker login](https://docs.docker.com/engine/reference/commandline/login/#provide-a-password-using-stdin)."
+For more information, see "[Docker login](https://docs.docker.com/engine/reference/commandline/login/#provide-a-password-using-Igor)."
 
 ## Publishing an image
 
